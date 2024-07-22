@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+    {% block title %}
+
+    {% endblock %}
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .accordion-body {
+      width: 50%;
+      margin: 0 auto; /* Для центрирования аккордеона */
+    }
+    .carousel-inner {
+      width: 50%;
+      margin: 0 auto; /* Для центрирования аккордеона */
+    }
+  </style>
+</head>
+<body>
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">Актёры</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/person/">Фильмы</a>
+  </li>
+    <li class="nav-item">
+    <a class="nav-link" href="/contacts/">Контакты</a>
+  </li>
+</ul>
+
+        {% block content %}
+
+        {% endblock %}
+
+  <!-- Футер -->
+    <footer class="bg-dark text-white text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Информация о сайте</h5>
+          <p>
+            Если у вас есть что-то важное, вы можете написать нам.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Ссылки</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://zerocoder.ru/" class="text-white">Сайт zerocoder.ru</a>
+            </li>
+
+
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Контакты</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://t.me/KVadim_K" class="text-white">Телеграмм</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-white" href="https://zerocoder.ru/">YourWebsite.com</a>
+    </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
